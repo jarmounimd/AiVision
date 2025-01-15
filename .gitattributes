@@ -1,9 +1,15 @@
-# Adjust language detection weights
+# Make Python dominant
 *.py linguist-language=Python linguist-detectable=true
-*.js linguist-language=JavaScript linguist-detectable=true
-*.jsx linguist-language=JavaScript linguist-detectable=true
+*.py linguist-vendored=false
 
-# Adjust documentation and styling
-*.css linguist-documentation
-*.html linguist-documentation
-*.md linguist-documentation
+# Reduce JavaScript weight
+*.js linguist-documentation
+*.jsx linguist-documentation
+*.ts linguist-documentation
+*.tsx linguist-documentation
+
+# Hide other files
+*.css linguist-vendored
+*.html linguist-vendored
+*.json linguist-vendored
+*.lock linguist-vendored
