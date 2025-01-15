@@ -1,3 +1,9 @@
-* linguist-vendored
-*.py linguist-vendored=false
-*.py linguist-detectable=true
+# Adjust language detection weights
+*.py linguist-language=Python linguist-detectable=true
+*.js linguist-language=JavaScript linguist-detectable=true
+*.jsx linguist-language=JavaScript linguist-detectable=true
+
+# Adjust documentation and styling
+*.css linguist-documentation
+*.html linguist-documentation
+*.md linguist-documentation
