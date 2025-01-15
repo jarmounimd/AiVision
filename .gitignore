@@ -1,0 +1,39 @@
+# Virtual Environment
+vetest/Lib/
+vetest/Include/
+vetest/Scripts/
+vetest/__pycache__/
+vetest/*.pyc
+vetest/pyvenv.cfg
+
+# Large data files
+vetest/*.npy
+vetest/*.pyd
+vetest/image_features*.json
+vetest/uploads/
+vetest/old/
+
+# Node modules
+front/frontend/node_modules/
+front/frontend/build/
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.log
+*.tmp
