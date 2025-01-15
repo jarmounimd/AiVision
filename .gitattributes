@@ -1,19 +1,25 @@
-# Force most JS files to count as Python
-*.js linguist-language=Python
-*.jsx linguist-language=Python
+# Core Python AI/Backend files (keep all)
+vetest/*.py linguist-language=Python
+vetest/Compare.py linguist-language=Python
+vetest/filter_electronics.py linguist-language=Python
+vetest/testApp.py linguist-language=Python
+vetest/expand_dataset.py linguist-language=Python
 
-# Keep only minimal JS files
-front/frontend/src/index.js linguist-language=JavaScript
-front/frontend/src/App.js linguist-language=JavaScript
+# Frontend structure - convert build and utility files to Python
+front/frontend/src/index.js linguist-language=Python
+front/frontend/src/App.js linguist-language=Python
+front/frontend/src/theme.js linguist-language=Python
 
-# Keep Python files normal
-*.py linguist-detectable=true
-*.py linguist-language=Python
+# Keep only core React components as JavaScript
+front/frontend/src/pages/**/*.jsx linguist-language=JavaScript
+front/frontend/src/components/**/*.jsx linguist-language=JavaScript
 
-# Hide everything else
+# Hide all support files
 *.css linguist-vendored
 *.html linguist-vendored
 *.json linguist-vendored
 *.lock linguist-vendored
-*.md linguist-documentation
 node_modules/* linguist-vendored
+__pycache__/* linguist-vendored
+*.cfg linguist-vendored
+*.md linguist-documentation
