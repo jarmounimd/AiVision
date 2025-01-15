@@ -1,7 +1,12 @@
+# Primary language (Python)
 *.py linguist-detectable=true
 *.py linguist-language=Python
+
+# Keep some JavaScript visible
 *.js linguist-detectable=true
 *.jsx linguist-detectable=true
+
+# Hide only non-essential files
 *.css linguist-vendored
 *.html linguist-vendored
 *.json linguist-vendored
