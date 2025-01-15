@@ -2,17 +2,21 @@
 *.py linguist-detectable=true
 *.py linguist-language=Python
 
-# Keep some JavaScript visible
+# Give JavaScript more weight
 *.js linguist-detectable=true
 *.jsx linguist-detectable=true
+*.ts linguist-detectable=true
+*.tsx linguist-detectable=true
 
-# Hide only non-essential files
+# Show package files
+package.json linguist-detectable=true
+package-lock.json linguist-detectable=true
+
+# Only hide style files
 *.css linguist-vendored
+*.scss linguist-vendored
 *.html linguist-vendored
-*.json linguist-vendored
-*.lock linguist-vendored
 node_modules/* linguist-vendored
 
 # Documentation
 *.md linguist-documentation
-requirements.txt linguist-documentation
