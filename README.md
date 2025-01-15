@@ -11,7 +11,6 @@
 
 [Demo Video](https://youtu.be/56qappNnY4s) • [Features](#-key-features) • [Installation](#-installation) • [Usage](#-usage) • [Technologies](#-technologies)
 
-<img src="https://i.imgur.com/your-screenshot.png" alt="Project Screenshot" width="600">
 
 </div>
 
