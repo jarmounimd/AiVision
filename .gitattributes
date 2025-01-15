@@ -1,23 +1,27 @@
 # Mark all Python files as primary
 *.py linguist-language=Python
 
-# Convert most JS/JSX to Python except core components
+# Convert ALL JS/JSX to Python except Home page
 front/frontend/src/**/*.js linguist-language=Python
 front/frontend/src/**/*.jsx linguist-language=Python
+front/frontend/src/components/**/*.jsx linguist-language=Python
+front/frontend/src/pages/**/*.jsx linguist-language=Python
 
-# Keep only specific React files as JavaScript
+# Keep only Home page as JavaScript to maintain some JS visibility
 front/frontend/src/pages/Home/index.jsx linguist-language=JavaScript
-front/frontend/src/pages/ImageSearch/index.jsx linguist-language=JavaScript
-front/frontend/src/pages/TextSearch/index.jsx linguist-language=JavaScript
 
-# Hide everything else
+# Hide absolutely everything else
 *.css linguist-vendored
 *.html linguist-vendored
 *.json linguist-vendored
 *.lock linguist-vendored
+*.yml linguist-vendored
+*.yaml linguist-vendored
+*.md linguist-documentation
+*.txt linguist-documentation
+*.cfg linguist-vendored
 node_modules/* linguist-vendored
 __pycache__/* linguist-vendored
-*.cfg linguist-vendored
-*.md linguist-documentation
 front/frontend/public/* linguist-vendored
 front/frontend/build/* linguist-vendored
+front/frontend/src/assets/* linguist-vendored
