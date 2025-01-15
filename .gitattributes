@@ -1,37 +1,19 @@
-# Python files (keep all)
+# Mark Python as primary
 *.py linguist-detectable=true
 *.py linguist-language=Python
 
-# JavaScript/React files (selectively hide)
-# Hide build tools and config
-node_modules/* linguist-vendored
-build/* linguist-vendored
-dist/* linguist-vendored
-*.config.js linguist-vendored
-*.config.jsx linguist-vendored
-package*.json linguist-vendored
-webpack.* linguist-vendored
+# Specifically target the React components we want to hide
+front/frontend/src/pages/TextSearch/* linguist-vendored
+front/frontend/src/pages/ImageSearch/* linguist-vendored
+front/frontend/src/components/* linguist-vendored
 
-# Hide React boilerplate
-front/frontend/src/setupTests.* linguist-vendored
-front/frontend/src/reportWebVitals.* linguist-vendored
-front/frontend/src/index.* linguist-vendored
-front/frontend/src/App.test.* linguist-vendored
-
-# Hide utility JavaScript
-*.util.js linguist-vendored
-*.test.js linguist-vendored
-*.spec.js linguist-vendored
-
-# Keep only core React components as JavaScript
-*.js linguist-detectable=true
-*.jsx linguist-detectable=true
-
-# Hide styling and assets
+# Hide all web-related files
 *.css linguist-vendored
-*.scss linguist-vendored
 *.html linguist-vendored
-*.svg linguist-vendored
 *.json linguist-vendored
 *.lock linguist-vendored
-*.md linguist-documentation
+node_modules/* linguist-vendored
+
+# Keep only minimal JS visibility
+*.js linguist-language=JavaScript
+*.jsx linguist-language=JavaScript
