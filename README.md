@@ -34,7 +34,7 @@ Check out our platform in action:
 ### Backend Setup
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/electronics-search-platform.git
+git clone https://github.com/jarmounimd/AiVision.git
 
 # Create and activate virtual environment
 python -m venv venv
