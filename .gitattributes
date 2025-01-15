@@ -1,14 +1,14 @@
-# Make Python dominant
-*.py linguist-language=Python linguist-detectable=true
-*.py linguist-vendored=false
+# Count both languages but make Python dominant
+*.py linguist-detectable=true
+*.js linguist-detectable=true
+*.jsx linguist-detectable=true
 
-# Reduce JavaScript weight
-*.js linguist-documentation
-*.jsx linguist-documentation
-*.ts linguist-documentation
-*.tsx linguist-documentation
+# Give Python more weight
+*.py linguist-language=Python
+*.js linguist-language=Python
+*.jsx linguist-language=JavaScript
 
-# Hide other files
+# Hide non-essential files
 *.css linguist-vendored
 *.html linguist-vendored
 *.json linguist-vendored
