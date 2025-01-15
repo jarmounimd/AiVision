@@ -1,22 +1,25 @@
-# Primary language (Python)
+# Make Python more prominent
 *.py linguist-detectable=true
 *.py linguist-language=Python
 
-# Give JavaScript more weight
-*.js linguist-detectable=true
+# Reduce JavaScript weight
+*.js linguist-language=Python
 *.jsx linguist-detectable=true
-*.ts linguist-detectable=true
-*.tsx linguist-detectable=true
+*.ts linguist-vendored
+*.tsx linguist-vendored
 
-# Show package files
-package.json linguist-detectable=true
-package-lock.json linguist-detectable=true
+# Hide build and config files
+node_modules/* linguist-vendored
+build/* linguist-vendored
+dist/* linguist-vendored
+*.json linguist-vendored
+*.lock linguist-vendored
 
-# Only hide style files
+# Hide style files
 *.css linguist-vendored
 *.scss linguist-vendored
 *.html linguist-vendored
-node_modules/* linguist-vendored
 
 # Documentation
 *.md linguist-documentation
+requirements.txt linguist-documentation
