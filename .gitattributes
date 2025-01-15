@@ -1,19 +1,13 @@
-# Primary language (Python)
 *.py linguist-detectable=true
 *.py linguist-language=Python
-
-# Increase JavaScript visibility
 *.js linguist-detectable=true
 *.jsx linguist-detectable=true
-*.ts linguist-detectable=true
-*.tsx linguist-detectable=true
-
-# Documentation (reduces Python percentage)
-*.py linguist-documentation=false
-requirements.txt linguist-documentation
-
-# Hide only minimal files
 *.css linguist-vendored
 *.html linguist-vendored
+*.json linguist-vendored
 *.lock linguist-vendored
 node_modules/* linguist-vendored
+
+# Documentation
+*.md linguist-documentation
+requirements.txt linguist-documentation
