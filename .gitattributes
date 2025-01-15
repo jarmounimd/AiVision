@@ -1,18 +1,15 @@
-# Mark Python files as primary
-*.py linguist-language=Python
-*.py linguist-detectable=true
-*.py linguist-vendored=false
+# Count both languages
+*.py linguist-detectable=true linguist-language=Python
+*.js linguist-detectable=true linguist-language=JavaScript
 
-# Reduce JavaScript weight significantly
-*.js linguist-vendored=true
-*.jsx linguist-vendored=true
-*.ts linguist-vendored=true
-*.tsx linguist-vendored=true
+# Adjust weights but keep both visible
+*.jsx linguist-language=Python
+*.tsx linguist-language=Python
+*.ts linguist-language=Python
 
-# Hide all web-related files
+# Hide only non-essential files
 *.css linguist-vendored
 *.html linguist-vendored
 *.json linguist-vendored
 *.lock linguist-vendored
-*.md linguist-vendored
 node_modules/* linguist-vendored
