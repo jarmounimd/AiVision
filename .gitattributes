@@ -1,21 +1,19 @@
-# Boost Python
+# Primary language (Python)
 *.py linguist-detectable=true
 *.py linguist-language=Python
 
-# Convert most JS to Python but keep some visible
-*.js linguist-language=Python
-*.jsx linguist-language=Python
-src/*.js linguist-language=JavaScript
-src/*.jsx linguist-language=JavaScript
+# Increase JavaScript visibility
+*.js linguist-detectable=true
+*.jsx linguist-detectable=true
+*.ts linguist-detectable=true
+*.tsx linguist-detectable=true
 
-# Hide everything else
+# Documentation (reduces Python percentage)
+*.py linguist-documentation=false
+requirements.txt linguist-documentation
+
+# Hide only minimal files
 *.css linguist-vendored
-*.scss linguist-vendored
 *.html linguist-vendored
-*.json linguist-vendored
 *.lock linguist-vendored
-*.md linguist-documentation
 node_modules/* linguist-vendored
-build/* linguist-vendored
-dist/* linguist-vendored
-public/* linguist-vendored
