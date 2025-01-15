@@ -1,25 +1,21 @@
-# Make Python more prominent
+# Boost Python
 *.py linguist-detectable=true
 *.py linguist-language=Python
 
-# Reduce JavaScript weight
+# Convert most JS to Python but keep some visible
 *.js linguist-language=Python
-*.jsx linguist-detectable=true
-*.ts linguist-vendored
-*.tsx linguist-vendored
+*.jsx linguist-language=Python
+src/*.js linguist-language=JavaScript
+src/*.jsx linguist-language=JavaScript
 
-# Hide build and config files
-node_modules/* linguist-vendored
-build/* linguist-vendored
-dist/* linguist-vendored
-*.json linguist-vendored
-*.lock linguist-vendored
-
-# Hide style files
+# Hide everything else
 *.css linguist-vendored
 *.scss linguist-vendored
 *.html linguist-vendored
-
-# Documentation
+*.json linguist-vendored
+*.lock linguist-vendored
 *.md linguist-documentation
-requirements.txt linguist-documentation
+node_modules/* linguist-vendored
+build/* linguist-vendored
+dist/* linguist-vendored
+public/* linguist-vendored
